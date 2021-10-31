@@ -1282,7 +1282,7 @@
 
 #if HAS_DISPLAY
   // The timeout (in ms) to return to the status screen from sub-menus
-  #define LCD_TIMEOUT_TO_STATUS 15000
+  //#define LCD_TIMEOUT_TO_STATUS 15000
 
   #if ENABLED(SHOW_BOOTSCREEN)
     #define BOOTSCREEN_TIMEOUT 4000      // (ms) Total Duration to display the boot screen(s)
@@ -3744,10 +3744,10 @@
 // Custom Menu: Main Menu
 #define CUSTOM_MENU_MAIN
 #if ENABLED(CUSTOM_MENU_MAIN)
-  #define CUSTOM_MENU_MAIN_TITLE "Steve - Commands"
+  //#define CUSTOM_MENU_MAIN_TITLE "Steve - Commands"
   #define CUSTOM_MENU_MAIN_SCRIPT_DONE "User Script Done"
   #define CUSTOM_MENU_MAIN_SCRIPT_AUDIBLE_FEEDBACK
-  #define CUSTOM_MENU_MAIN_SCRIPT_RETURN   // Return to status screen after a script
+  //#define CUSTOM_MENU_MAIN_SCRIPT_RETURN   // Return to status screen after a script
   #define CUSTOM_MENU_MAIN_ONLY_IDLE         // Only show custom menu when the machine is idle
 
   #define MAIN_MENU_ITEM_1_DESC "Heat Bed/Home/Level"

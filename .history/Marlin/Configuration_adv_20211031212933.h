@@ -1253,7 +1253,7 @@
    * LED Control Menu
    * Add LED Control to the LCD menu
    */
-  //#define LED_CONTROL_MENU
+  #define LED_CONTROL_MENU
   #if ENABLED(LED_CONTROL_MENU)
     #define LED_COLOR_PRESETS                 // Enable the Preset Color menu option
     //#define NEO2_COLOR_PRESETS              // Enable a second NeoPixel Preset Color menu option
@@ -1282,7 +1282,7 @@
 
 #if HAS_DISPLAY
   // The timeout (in ms) to return to the status screen from sub-menus
-  #define LCD_TIMEOUT_TO_STATUS 15000
+  #define LCD_TIMEOUT_TO_STATUS 20000
 
   #if ENABLED(SHOW_BOOTSCREEN)
     #define BOOTSCREEN_TIMEOUT 4000      // (ms) Total Duration to display the boot screen(s)
@@ -1883,7 +1883,7 @@
 
   //#define BABYSTEP_DISPLAY_TOTAL          // Display total babysteps since last G28
 
-  //#define BABYSTEP_ZPROBE_OFFSET          // Combine M851 Z and Babystepping
+  #define BABYSTEP_ZPROBE_OFFSET          // Combine M851 Z and Babystepping
   #if ENABLED(BABYSTEP_ZPROBE_OFFSET)
     //#define BABYSTEP_HOTEND_Z_OFFSET      // For multiple hotends, babystep relative Z offsets
     //#define BABYSTEP_ZPROBE_GFX_OVERLAY   // Enable graphical overlay on Z-offset editor
@@ -3988,9 +3988,9 @@
  * Specified pin has pullup and connecting to ground will instantly pause motion.
  * Potentially useful for emergency stop that allows being resumed.
  */
-//#define FREEZE_FEATURE
+#define FREEZE_FEATURE
 #if ENABLED(FREEZE_FEATURE)
-  //#define FREEZE_PIN 41   // Override the default (KILL) pin here
+  #define FREEZE_PIN 41   // Override the default (KILL) pin here
 #endif
 
 /**
@@ -4225,4 +4225,4 @@
  * Software Reset options
  */
 //#define SOFT_RESET_VIA_SERIAL         // 'KILL' and '^X' commands will soft-reset the controller
-//#define SOFT_RESET_ON_KILL            // Use a digital button to soft-reset the controller after KILL
+#define SOFT_RESET_ON_KILL            // Use a digital button to soft-reset the controller after KILL
