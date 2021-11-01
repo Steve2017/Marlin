@@ -171,3 +171,6 @@ __pycache__
 # Simulation / Native
 eeprom.dat
 imgui.ini
+.history/Marlin/Configuration_adv_20211101162359.h
+.history/Marlin/Configuration_adv_20211101165943.h
+.history/Marlin/Configuration_adv_20211101170608.h
